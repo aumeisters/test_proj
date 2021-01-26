@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v15-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v15-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+	box-sizing: border-box;
+}
+*,*::before,*::after {
+	box-sizing: inherit;
+}
+body {
+	background-color: #F6F6F6;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 19.5px;
+}
+.comparation {
+	width: 80%;
+	margin: 30px auto;
+	background-color: #fff;
+	height: auto;
+	border-radius: 10px;
+	padding: 48px 30px 60px;
+}
+h3 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	display: inline-block;
+}
+.comparation_comparables_category {
+	flex-basis: 19%;
+}
+.tooltip {
+	margin-left: 10px;
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	background-image: url(../img/svg/explanation.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 25px;
+	height: 25px;
+	position: relative;
+}
+.tooltip::before,
+.tooltip::after {
+	--scale: 0;
+	--arror-size: 10px;
+	position: absolute;
+	top: -18px;
+	left: 50%;
+	transform: translateX(-50%) translateY(var(--translate-y,0)) scale(var(--scale));
+	transition: 0.3s transform;
+	transform-origin: bottom center;
+}
+.tooltip::before {
+	--translate-y: calc(-100% - var(--arror-size));
+	content: attr(data-tooltip);
+	background-color: #fff;
+	border-radius: 14px;
+	box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+	padding: 20px 20px 22px 20px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+	width: 258px;
+}
+.tooltip::after {
+	--translate-y: calc(-1 * var(--arror-size));
+	content: '';
+	border: var(--arror-size) solid transparent;
+	border-top-color: #fff;
+	transform-origin: top center;
+}
+.tooltip_category:hover::before, .tooltip_category:hover::after {
+	--scale: 1;
+}
+.tooltip_lightning:hover::before, .tooltip_lightning:hover::after {
+	--scale: 1;
+}
+.comparation_comparables_category select {
+	width: 250px;
+	height: 50px;
+	box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	margin: 22px 0 28px;
+	border: 1px solid #E5E5E5;
+	padding: 0 23px 0 20px;
+	font-size: 14px; 
+	font-weight: 400;
+	color: #9A9A9A;
+	outline: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff; 
+	background-image: url('../img/svg/appearance.svg'); 
+	background-repeat: no-repeat;
+	background-position: right 23px top 50%;
+	transition: 0.3s background-image;
+	cursor: pointer;
+}
+.comparation_comparables_category select:focus {
+	background-image: url('../img/svg/appearance_upsidedown.svg'); 
+
+}
+.custom_radio {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.custom_radio+label {
+	display: flex;
+	align-items: center;
+	user-select: none;
+	margin: 15px 0;
+}
+.custom_radio+label::before {
+	content: '';
+	display: inline-block;
+	flex-basis: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1.67px solid #4BB1BC;
+	border-radius: 50%;
+	background-color: #EEF8F9;
+	background-repeat: no-repeat;
+ 	background-position: center center;
+ 	margin-right: 15px;
+ 	cursor: pointer;
+}
+.custom_radio:checked+label::before {
+	background-image: url(../img/svg/radio_checked.svg);
+}
+.custom_radio:disabled+label::before {
+    background-color: #EEF8F9;
+}
+.comparation_comparables {
+	border-bottom: 1px solid #E5E5E5;
+	padding-bottom: 23px;
+	display: flex;
+}
+.comparation_comparables_items {
+	flex-basis: 81%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	transform: translateX(80px);
+}
+.comparation_comparables_items_item {
+	display: flex;
+	flex-basis: 48.5%;
+	height: 163px;
+	align-items: center;
+	position: relative;
+}
+.comparation_comparables_items_item_close {
+	position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 70%;
+	background-image: url(../img/svg/close.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 15px 15px;
+	align-self: flex-start;
+	cursor: pointer;
+}
+.comparation_comparables_items_item_img img {
+	width: 100%;
+}
+.comparation_comparables_items_item_info {
+	margin-left: 28px ;
+}
+.comparation_comparables_items_item_info_category {
+	font-size: 14px;
+	font-weight: 400;
+	color: #ACB8CA;
+	margin-bottom: 15px;
+	line-height: 17px;
+}
+.comparation_comparables_items_item_info_product_name {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	margin-bottom: 19px;
+}
+.comparation_comparables_items_item_info_product_price {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 13px;
+	margin-top: 21px;
+	display: flex;
+	align-items: center;
+}
+.comparation_comparables_items_item_info_product_price_old {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	text-decoration: line-through;
+	color: #ACB8CA;
+	margin-left: 10px;
+}
+.comparation_comparables_items_item_info_buttons {
+	display: flex;
+
+}
+.comparation_comparables_items_item_info_buttons button {
+	cursor: pointer;
+	font-family: inherit;
+	border: none;
+	outline: none;
+}
+.comparation_comparables_items_item_info_add {
+	background-color: #000;
+	border-radius: 10px;
+	color: #fff;
+	padding: 10px 18.5px;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 600;
+	outline: none;
+}
+.comparation_comparables_items_item_info_purchase {
+	background: none;
+	border: none;
+	outline: none;
+	background-image: url(../img/svg/telephone.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 15px 15px;
+	padding-left: 20px;
+	margin-left: 30px;
+	font-size: 12px;
+	line-height: 14.63px;
+	font-weight: 600;
+}
+.comparation_info {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+.comparation_info_row {
+	margin-top: 40px;
+	display: block;
+}
+.comparation_info_row_subrow {
+	margin-top: 28px;
+	display: flex;
+	align-items: center;
+}
+.comparation_info_row .comparation_info_row_subrow h2 {
+	padding-left: 7.38px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17.07px;
+	color: #9A9A9A;
+	display: inline-block;
+}
+.comparation_info_category {
+	flex-basis: 19%;
+}
+.comparation_info_category h2 {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24.38px;
+}
+.comparation_info_properties {
+	flex-basis: 81%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	transform: translateX(80px);
+}
+.comparation_info_properties_value {
+	display: flex;
+	flex-basis: 48.5%;
+	align-items: center;
+}
+.comparation_info_properties_value_bonuses {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 148px;
+	height: 27px;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.02);
+	border-radius: 5px;
+	border: 2px solid #F6F6F6;
+	font-size: 12px;
+	line-height: 14.63px;
+	font-weight: 700;
+}
+.comparation_info_properties_value_bonuses span {
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	background-image: url(../img/svg/bonuses.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 15px 14px;
+	margin-right: 7px;
+}
+.comparation_info_properties_value p {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17.07px;
+}
+.comparation_devices {
+	margin-top: 50px;
+	text-align: center;
+	width: 1100px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+.comparation_devices p {
+	font-size: 20px;
+	line-height: 24.38px;
+	font-weight: 600;
+}
+.comparation_menu {
+	text-align: center;
+	margin-top: 33px;
+}
+.comparation_menu button {
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19.5px;
+	padding: 15px 40px;
+	margin: 0 14px;
+}
+.comparation_menu_clear {
+	background-color: #F6F6F6;
+}
+.comparation_menu_back {
+	background-color: #000;
+	color: #fff;
+}
+.comparation_menu_back span {
+	display: inline-block;
+	background-image: url(../img/svg/back.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+

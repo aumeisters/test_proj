@@ -1,0 +1,88 @@
+@media screen and (max-width: 1366px) {
+	.comparation_comparables_items_item_img img {
+    	width: auto;
+    	height: 163px;
+	}
+	.comparation_comparables_category,.comparation_info_category {
+    	flex-basis: 277px;
+	}
+	.comparation_comparables_items,.comparation_info_properties {
+	    transform: translateX(77px);
+	    flex-basis: 724px;
+	}
+	.comparation_comparables_items_item,.comparation_info_properties_value {
+	    flex-basis: 362px;
+	    height: auto;
+	    flex-wrap: wrap;
+	}
+	.comparation_comparables_items_item_info {
+    	margin-left: 0;
+	}
+	.comparation_comparables_items_item_info_category {
+	    margin-top: 10px;
+	    margin-bottom: 15px;
+	}
+	.comparation_comparables {
+	    padding-bottom: 50px;
+	}
+	.comparation_comparables_items_item_close {
+	    left: 76%;
+	}
+	.comparation_comparables_items_item_info_purchase {
+		margin-left: 21px;
+	}
+	.comparation_devices {
+		width: 992px;
+	}
+	.comparation_menu {
+    	margin-top: 37px;
+	}
+	.comparation_info_row_subrow {
+		margin-top: 42px;
+	}
+	.comparation_info_row .comparation_info_row_subrow {
+		margin-top: 28px;
+	}
+}
+@media screen and (max-width: 980px) {
+	.comparation_comparables_category,.comparation_info_category {
+    	flex-basis: 232px;
+	}
+	.comparation_comparables_items_item {
+	    height: 379px;
+	}
+	.comparation_comparables_items_item,.comparation_info_properties_value {
+	    flex-basis: 231px;
+	}
+	.comparation_comparables_items,.comparation_info_properties {
+	    transform: translateX(23px);
+	    flex-basis: 572px;
+	    justify-content: space-between;
+	}
+	.comparation_comparables_items_item_info_buttons {
+		display: flex;
+		flex-flow: column;
+	}
+	.comparation_comparables_items_item_info_add {
+		order: -1;
+		width: 124px;	
+		margin-top: 18.44px;
+	}
+	.comparation_comparables_items_item_info_purchase {
+		order: -2;
+		margin-left: 0;
+		width: 114px;
+	}
+	.comparation_comparables_items_item_info_product_price {
+		margin-bottom: 23.56px;
+	}
+	.comparation_comparables_items_item_close {
+	    left: 80%;
+	}
+	.comparation_comparables_category select {
+		width: 233px;
+	}
+	.comparation_devices {
+		width: 785px;
+	}
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Сравнение товаров</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/media.css">
+</head>
+<body>
+	<section class="comparation">
+		<div class="wrapper">
+			<div class="comparation_comparables">
+				<div class="comparation_comparables_category">
+					<h3>Для категорий</h3>
+					<div class="tooltip tooltip_category" data-tooltip="Для категории"></div>
+					<select>
+						<option selected>Смартфоны</option>
+						<option></option>
+					</select>
+					<div class="comparation_comparables_category_radio">
+						<input type="radio" name="radio" id="all_characteristics" class="custom_radio" value="all_characteristics">
+						<label for="all_characteristics">Все характеристики</label>
+					</div>
+					<div class="comparation_comparables_category_radio">
+						<input type="radio" name="radio" id="differences" class="custom_radio" value="differences">
+						<label for="differences">Показать только различия</label>
+					</div>
+				</div>
+				<div class="comparation_comparables_items">
+					<div class="comparation_comparables_items_item">
+						<div class="comparation_comparables_items_item_img">
+							<img src="./img/phone1.png" alt="first comparable item">
+						</div>
+						<div class="comparation_comparables_items_item_info">
+							<p class="comparation_comparables_items_item_info_category">Смартфоны</p>
+							<h3>Apple iPhone 11 64 Gb (Gold)</h3>
+							<p class="comparation_comparables_items_item_info_product_price">49 999 ₽<span class="comparation_comparables_items_item_info_product_price_old">60 999 ₽</span></p>
+							<div class="comparation_comparables_items_item_info_buttons">	
+								<button class="comparation_comparables_items_item_info_add">В корзину</button>
+								<button class="comparation_comparables_items_item_info_purchase">Купить в 1 клик</button>
+							</div>
+						</div>
+						<div class="comparation_comparables_items_item_close"></div>
+					</div>
+					<div class="comparation_comparables_items_item">
+						<div class="comparation_comparables_items_item_img">
+							<img src="./img/phone2.png" alt="second comparable item">
+						</div>
+						<div class="comparation_comparables_items_item_info">
+							<p class="comparation_comparables_items_item_info_category">Смартфоны</p>
+							<h3>Xiaomi Redmi Note 8 Pro (blue)</h3>
+							<p class="comparation_comparables_items_item_info_product_price">16 700 ₽<span class="comparation_comparables_items_item_info_product_price_old">19 999 ₽</span></p>
+							<div class="comparation_comparables_items_item_info_buttons">	
+								<button class="comparation_comparables_items_item_info_add">В корзину</button>
+								<button class="comparation_comparables_items_item_info_purchase">Купить в 1 клик</button>
+							</div>
+						</div>
+						<div class="comparation_comparables_items_item_close"></div>
+					</div>
+				</div>
+			</div>
+			<div class="comparation_info">
+				<div class="comparation_info_row_subrow">
+					<div class="comparation_info_category">
+						<h2>Бонусные рубли</h2>
+					</div>
+					<div class="comparation_info_properties">
+						<div class="comparation_info_properties_value">
+							<div class="comparation_info_properties_value_bonuses"><span></span>+ 2 000 бонусов</div>
+						</div>
+						<div class="comparation_info_properties_value">
+							<div class="comparation_info_properties_value_bonuses"><span></span>+ 2 000 бонусов</div>
+						</div>
+					</div>
+				</div>
+				<div class="comparation_info_row_subrow">
+					<div class="comparation_info_category">
+						<h2>Акции и специальные предложения</h2>
+					</div>
+					<div class="comparation_info_properties">
+						<div class="comparation_info_properties_value">
+							<p>Рассрочка</p>
+						</div>
+						<div class="comparation_info_properties_value">
+							<p>Скидка 50% на наушники</p>
+						</div>
+					</div>
+				</div>
+				<div class="comparation_info_row_subrow">
+					<div class="comparation_info_category">
+						<h2>Наличие</h2>
+					</div>
+					<div class="comparation_info_properties">
+						<div class="comparation_info_properties_value">
+							<p>В наличии</p>
+						</div>
+						<div class="comparation_info_properties_value">
+							<p>От 3 до 5 дней</p>
+						</div>
+					</div>
+				</div>
+				<div class="comparation_info_row">
+					<div class="comparation_info_category">
+						<h2>Основные</h2>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Операционная система</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>iOS 13</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>iOS 13</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Цвет</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>золотой</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>черный</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Год выпуска</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>2019</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>2019</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comparation_info_row">
+					<div class="comparation_info_category">
+						<h2>Процессор</h2>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Производитель</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>Apple</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>Apple</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Тип</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>A13 Bionic</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>A13 Bionic</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comparation_info_row">
+					<div class="comparation_info_category">
+						<h2>Экран</h2>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Диагональ (дюймов)</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>5,8</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>5,8</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Тип экрана</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>Super Retina XDR</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>Super Retina XDR</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Разрешение экрана</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>2436×1125 точек</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>2436×1125 точек</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comparation_info_row">
+					<div class="comparation_info_category">
+						<h2>Камера</h2>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Количество основных камер</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>3</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>3</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Разрешения основных камер</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>12 МПикс, 12 МПикс, 12 МПикс</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>12 МПикс, 12 МПикс, 12 МПикс</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Функции основной камеры</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Фронтальная камера</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>есть</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>есть</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Разрешение фронтальной камеры</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>12 Мпикс</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>12 Мпикс</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Вспышка</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>есть, светодиодная</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>есть, светодиодная</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comparation_info_row">
+					<div class="comparation_info_category">
+						<h2>Память</h2>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Встроенная память</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>64 Гб</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>64 Гб</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comparation_info_row">
+					<div class="comparation_info_category">
+						<h2>Питание</h2>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Тип разъема для зарядки</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>Lightning</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>Lightning</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Функция быстрой зарядки</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>есть</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>есть</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Функция беспроводной зарядки</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>есть</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>есть</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comparation_info_row">
+					<div class="comparation_info_category">
+						<h2>Подключение</h2>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Разъем Lightning 8 Pin</h2>
+								<div class="tooltip tooltip_lightning" data-tooltip="4500 мАч - это примерно 30 часов активного использования устройства"></div>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>есть</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>есть</p>
+								</div>
+							</div>
+						</div>
+						<div class="comparation_info_row_subrow">
+							<div class="comparation_info_category">
+								<h2>Разъем для наушников</h2>
+							</div>
+							<div class="comparation_info_properties">
+								<div class="comparation_info_properties_value">
+									<p>Lightning</p>
+								</div>
+								<div class="comparation_info_properties_value">
+									<p>Lightning</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="comparation_devices">
+				<p>Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A) и Смартфон Apple iPhone SE 2020 128GB Black (MXD02RU/A) - сравнение основных характеристик моделей</p>
+			</div>
+			<div class="comparation_menu">
+				<button class="comparation_menu_clear">Очистить список</button>
+				<button class="comparation_menu_back"><span></span>Назад к товарам</button>
+			</div>
+		</div>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>
